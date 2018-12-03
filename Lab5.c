@@ -61,9 +61,9 @@ void update(int parray[], int farray[], int p, int f)
 
     if(f>=p)
     {
-        while (f>=p && i<f-1){
+        while (f>=p && i<f){
             if(farray[i]==4){
-                parray[++p]=5;
+                parray[p++]=5;
                 farray[i]=farray[--f];
             }
             i++;
